@@ -1,0 +1,12 @@
+version: '3'
+services:   
+    mysql-server:
+        image: mysql:8.0.17
+        container_name: secretaria-mysql
+        environment:
+            MYSQL_ROOT_PASSWORD: 12345
+            MYSQL_DATABASE: secretaria_salud
+        ports:
+            - 3308:3306
+
+        
